@@ -39,9 +39,16 @@ HEAD指向的版本就是当前版本，因此，Git允许我们在版本的历�
 11. 一般情况下，可以直接在文件目录中把文件删了，或者使用如上rm命令：rm b.txt
 	如果我想彻底从版本库中删掉了此文件的话，可以再执行commit命令提交掉.
 12. 在版本库中恢复此文件git checkout -- b.txt
-
-
-
+13. git remote add origin https://github.com/fxl2015/testgit20170505.git
+14. 把本地库的内容推送到远程，使用 git push命令，实际上是把当前分支master推送到远程
+15. 只要本地作了提交，就可以通过如下命令：git push origin master把本地master分支的最新修改推送到github上了
+16. 远程库已经准备好了，下一步是使用命令git clone克隆一个本地库
+17. 首先，我们来创建dev分支，然后切换到dev分支上,git checkout 命令加上 –b参数表示创建并切换，相当于如下2条命令
+	git branch dev
+	git checkout dev
+	git branch查看分支，会列出所有的分支，当前分支前面会添加一个星号。
+18. git branch master切换到主分支
+19. 把dev分支上的内容合并到分支master上可以在master分支上，使用如下命令 git merge dev 
 
 
 
